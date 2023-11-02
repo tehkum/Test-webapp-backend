@@ -24,6 +24,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: "Something went wrong" });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.port, () => {
   console.log("server started");
 });
