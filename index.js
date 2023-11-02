@@ -3,6 +3,7 @@ const cors = require("cors");
 const quiz = require("./routes/quiz.route");
 const test = require("./routes/test.route");
 const user = require("./routes/user.route");
+require("dotenv").config();
 
 require("./config/dbConfig");
 
