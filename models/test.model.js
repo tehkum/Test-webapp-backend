@@ -5,9 +5,9 @@ const testSchema = new mongoose.Schema({
   candidate: { type: mongoose.Schema.Types.ObjectId, ref: "userPros" },
   test: [
     {
-      statement: { type: String, required: true },
+      statement: { type: String },
       options: [{ type: String }],
-      correctAnswer: { type: String, required: true },
+      correctAnswer: { type: String },
       givenAnwer: { type: String },
     },
   ],
