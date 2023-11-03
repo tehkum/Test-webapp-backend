@@ -8,7 +8,7 @@ const testSchema = new mongoose.Schema({
       statement: { type: String },
       options: [{ type: String }],
       correctAnswer: { type: String },
-      givenAnwer: { type: String },
+      givenAnswer: { type: Number },
     },
   ],
 });
