@@ -39,7 +39,7 @@ const fetchUserTests = async (req, res) => {
 const fetchTest = async (req, res) => {
   try {
     const { id } = req.params;
-    const test = await Test.findById(id);
+    const test = await Test.findById(id).populate("candidate");
     if (!test) {
       return res.status(404).json({ message: "No test found" });
     }
